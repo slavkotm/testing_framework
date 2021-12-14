@@ -59,4 +59,12 @@ public class OrderAviaTicketsOnTravellingPage extends AbstractPage {
                 .until(ExpectedConditions.presenceOfElementLocated(By.xpath(BOOKING_AVIA_TICKETS)));
         return this;
     }
+
+    public String getFieldDepartureCity() {
+        return fieldDepartureCity.getAttribute("content");
+    }
+
+    public String getFieldArrivalCity() {
+        return fieldArrivalCity.getAttribute("content");
+    }
 }

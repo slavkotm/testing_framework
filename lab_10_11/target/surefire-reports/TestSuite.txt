@@ -1,4 +1,17 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 54.173 s - in TestSuite
+Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 123.431 s <<< FAILURE! - in TestSuite
+testSearchAviaTicketsWithEmptyArrivalCityForTravel(org.testing.test.SearchResultOnTravellingPageTest)  Time elapsed: 11.096 s  <<< FAILURE!
+org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: headless chrome=93.0.4577.82)
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'pirozhok-GF63-8RC', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-41-generic', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9c5abfd54d400a92f1efe8e060dc4d8d, clickElement {id=82c14e72-fb07-48d7-872f-df2e556f9ced}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: /tmp/.com.google.Chrome.i37wJb}, goog:chromeOptions: {debuggerAddress: localhost:46393}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:46393/devtoo..., se:cdpVersion: 93.0.4577.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on LINUX (9c5abfd54d400a92f1efe8e060dc4d8d)] -> xpath: //a[@href='/objects/paleontologicheskiy-muzey-im-yu-a-orlova-g-moskva']/b]
+Session ID: 9c5abfd54d400a92f1efe8e060dc4d8d
+	at org.testing.test.SearchResultOnTravellingPageTest.testSearchAviaTicketsWithEmptyArrivalCityForTravel(SearchResultOnTravellingPageTest.java:33)
+

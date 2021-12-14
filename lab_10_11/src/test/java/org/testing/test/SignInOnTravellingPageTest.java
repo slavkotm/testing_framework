@@ -3,11 +3,11 @@ package org.testing.test;
 import org.testing.model.User;
 import org.testing.page.SignInOnTravellingPage;
 import org.testing.service.UserCreator;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.equalTo;
-import static org.hamcrest.Matchers.is;
+import static org.hamcrest.Matchers.*;
 import static org.testng.Assert.*;
 
 public class SignInOnTravellingPageTest extends CommonConditions {
@@ -19,23 +19,28 @@ public class SignInOnTravellingPageTest extends CommonConditions {
                 .clickOnButtonSignIn()
                 .inputInFieldUserEmailAndPasswordClickSigIn(testUser)
                 .getUserEmail();
+        Assert.assertTrue(true, inputEmail);
     }
 
     @Test
     public void testSignInAccountWithEmptyUserEmailOnTravellingPage() {
         User testUser = UserCreator.withEmptyUserEmail();
-        SignInOnTravellingPage signInOnTravellingPage = new SignInOnTravellingPage(driver)
+        String userPassword = new SignInOnTravellingPage(driver)
                 .openPage()
                 .clickOnButtonSignIn()
-                .inputInFieldUserEmailAndPasswordClickSigIn(testUser);
+                .inputInFieldUserEmailAndPasswordClickSigIn(testUser)
+                .getUserPassword();
+        Assert.assertTrue(true, userPassword);
     }
 
     @Test
     public void testSignInAccountWithEmptyUserPasswordOnTravellingPage() {
         User testUser = UserCreator.withEmptyUserPassword();
-        SignInOnTravellingPage signInOnTravellingPage = new SignInOnTravellingPage(driver)
+        String userEmail = new SignInOnTravellingPage(driver)
                 .openPage()
                 .clickOnButtonSignIn()
-                .inputInFieldUserEmailAndPasswordClickSigIn(testUser);
+                .inputInFieldUserEmailAndPasswordClickSigIn(testUser)
+                .getUserEmail();
+        Assert.assertTrue(true, userEmail);
     }
 }

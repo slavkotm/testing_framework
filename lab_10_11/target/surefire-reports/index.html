@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-All_tests" class="navigator-link">
-              <span class="suite-name border-passed">All tests</span>
+              <span class="suite-name border-failed">All tests</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods,   8 passed</span>
+                    <span class="method-stats">8 methods, 1 failed,   7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-All_tests" class="hide-methods failed suite-All_tests"> (hide)</a> <!-- hide-methods failed suite-All_tests -->
+                      <a href="#" panel-name="suite-All_tests" class="show-methods failed suite-All_tests"> (show)</a> <!-- show-methods failed suite-All_tests -->
+                    </span>
+                    <div class="method-list-content failed suite-All_tests">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_tests" title="org.testing.test.SearchResultOnTravellingPageTest" class="method navigator-link" hash-for-method="testSearchAviaTicketsWithEmptyArrivalCityForTravel">testSearchAviaTicketsWithEmptyArrivalCityForTravel</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-All_tests -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -124,11 +138,6 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-All_tests" title="org.testing.test.SearchResultOnTravellingPageTest" class="method navigator-link" hash-for-method="testSearchAviaTicketsWithEmptyArrivalCityForTravel">testSearchAviaTicketsWithEmptyArrivalCityForTravel</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-All_tests" title="org.testing.test.SignInOnTravellingPageTest" class="method navigator-link" hash-for-method="testSignInAccountWithCredentialsFromPropertyOnTravellingPage">testSignInAccountWithCredentialsFromPropertyOnTravellingPage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -154,6 +163,46 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-All_tests" class="panel All_tests">
+          <div class="suite-All_tests-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">org.testing.test.SearchResultOnTravellingPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchAviaTicketsWithEmptyArrivalCityForTravel">
+                  </a> <!-- testSearchAviaTicketsWithEmptyArrivalCityForTravel -->
+                  <span class="method-name">testSearchAviaTicketsWithEmptyArrivalCityForTravel</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: headless chrome=93.0.4577.82)
+Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
+System info: host: &apos;pirozhok-GF63-8RC&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.11.0-41-generic&apos;, java.version: &apos;11.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9c5abfd54d400a92f1efe8e060dc4d8d, clickElement {id=82c14e72-fb07-48d7-872f-df2e556f9ced}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: /tmp/.com.google.Chrome.i37wJb}, goog:chromeOptions: {debuggerAddress: localhost:46393}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:46393/devtoo..., se:cdpVersion: 93.0.4577.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on LINUX (9c5abfd54d400a92f1efe8e060dc4d8d)] -&gt; xpath: //a[@href=&apos;/objects/paleontologicheskiy-muzey-im-yu-a-orlova-g-moskva&apos;]/b]
+Session ID: 9c5abfd54d400a92f1efe8e060dc4d8d
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy28.click(Unknown Source)
+	at org.testing.page.SearchResultOnTravellingPage.completeWhichElement(SearchResultOnTravellingPage.java:65)
+	at org.testing.test.SearchResultOnTravellingPageTest.testSearchAviaTicketsWithEmptyArrivalCityForTravel(SearchResultOnTravellingPageTest.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_tests-class-failed -->
           <div class="suite-All_tests-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -180,13 +229,6 @@
                   <a name="testSearchAviaTicketsWithCredentialsFromPropertyForTravel">
                   </a> <!-- testSearchAviaTicketsWithCredentialsFromPropertyForTravel -->
                   <span class="method-name">testSearchAviaTicketsWithCredentialsFromPropertyForTravel</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testSearchAviaTicketsWithEmptyArrivalCityForTravel">
-                  </a> <!-- testSearchAviaTicketsWithEmptyArrivalCityForTravel -->
-                  <span class="method-name">testSearchAviaTicketsWithEmptyArrivalCityForTravel</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -303,42 +345,42 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(8);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testSearchAviaTicketsWithCredentialsFromPropertyForTravel')
-data.setCell(0, 2, 'org.testing.test.SearchResultOnTravellingPageTest')
-data.setCell(0, 3, 7723);
+data.setCell(0, 1, 'testOrderAviaTicketsWithEmptyDepartureCityOnTravellingPage')
+data.setCell(0, 2, 'org.testing.test.OrderAviaTicketsOnTravellingPageTest')
+data.setCell(0, 3, 28989);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testSignInAccountWithEmptyUserEmailOnTravellingPage')
-data.setCell(1, 2, 'org.testing.test.SignInOnTravellingPageTest')
-data.setCell(1, 3, 7714);
+data.setCell(1, 1, 'testOrderAviaTicketsWithCredentialsFromPropertyOnTravellingPage')
+data.setCell(1, 2, 'org.testing.test.OrderAviaTicketsOnTravellingPageTest')
+data.setCell(1, 3, 24084);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testSearchAviaTicketsWithEmptyArrivalCityForTravel')
+data.setCell(2, 1, 'testSearchAviaTicketsWithCredentialsFromPropertyForTravel')
 data.setCell(2, 2, 'org.testing.test.SearchResultOnTravellingPageTest')
-data.setCell(2, 3, 7415);
+data.setCell(2, 3, 21751);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'testOrderHotelsWithTestDataHotelOnTravellingPage')
 data.setCell(3, 2, 'org.testing.test.OrderHotelTicketsOnTravellingPageTest')
-data.setCell(3, 3, 5919);
+data.setCell(3, 3, 11085);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testOrderAviaTicketsWithEmptyDepartureCityOnTravellingPage')
-data.setCell(4, 2, 'org.testing.test.OrderAviaTicketsOnTravellingPageTest')
-data.setCell(4, 3, 5403);
+data.setCell(4, 1, 'testSearchAviaTicketsWithEmptyArrivalCityForTravel')
+data.setCell(4, 2, 'org.testing.test.SearchResultOnTravellingPageTest')
+data.setCell(4, 3, 10614);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testOrderAviaTicketsWithCredentialsFromPropertyOnTravellingPage')
-data.setCell(5, 2, 'org.testing.test.OrderAviaTicketsOnTravellingPageTest')
-data.setCell(5, 3, 5261);
+data.setCell(5, 1, 'testSignInAccountWithCredentialsFromPropertyOnTravellingPage')
+data.setCell(5, 2, 'org.testing.test.SignInOnTravellingPageTest')
+data.setCell(5, 3, 7494);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'testSignInAccountWithEmptyUserPasswordOnTravellingPage')
 data.setCell(6, 2, 'org.testing.test.SignInOnTravellingPageTest')
-data.setCell(6, 3, 4902);
+data.setCell(6, 3, 6650);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'testSignInAccountWithCredentialsFromPropertyOnTravellingPage')
+data.setCell(7, 1, 'testSignInAccountWithEmptyUserEmailOnTravellingPage')
 data.setCell(7, 2, 'org.testing.test.SignInOnTravellingPageTest')
-data.setCell(7, 3, 4766);
+data.setCell(7, 3, 6220);
 window.suiteTableData['All_tests']= { tableData: data, tableDiv: 'times-div-All_tests'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 49 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-All_tests">
               </div> <!-- times-div-All_tests -->
             </div> <!-- times-div -->
@@ -371,104 +413,106 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testSignInAccountWithCredentialsFromPropertyOnTravellingPage</span>
-                <span class="method-start">2143 ms</span>
+                <span class="method-start">1171 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">stopBrowser</span>
-                <span class="method-start">6910 ms</span>
+                <span class="method-start">8665 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">7141 ms</span>
+                <span class="method-start">8735 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testSignInAccountWithEmptyUserEmailOnTravellingPage</span>
-                <span class="method-start">7287 ms</span>
+                <span class="method-start">8880 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">stopBrowser</span>
-                <span class="method-start">15002 ms</span>
+                <span class="method-start">15101 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">15124 ms</span>
+                <span class="method-start">15223 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testSignInAccountWithEmptyUserPasswordOnTravellingPage</span>
-                <span class="method-start">15304 ms</span>
+                <span class="method-start">15392 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">stopBrowser</span>
-                <span class="method-start">20206 ms</span>
+                <span class="method-start">22043 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">org.testing.test.OrderHotelTicketsOnTravellingPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">20431 ms</span>
+                <span class="method-start">22125 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testOrderHotelsWithTestDataHotelOnTravellingPage</span>
-                <span class="method-start">20598 ms</span>
+                <span class="method-start">22374 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">stopBrowser</span>
-                <span class="method-start">26518 ms</span>
+                <span class="method-start">33459 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">org.testing.test.OrderAviaTicketsOnTravellingPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">26642 ms</span>
+                <span class="method-start">33582 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testOrderAviaTicketsWithCredentialsFromPropertyOnTravellingPage</span>
-                <span class="method-start">26839 ms</span>
+                <span class="method-start">34251 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">stopBrowser</span>
-                <span class="method-start">32100 ms</span>
+                <span class="method-start">58335 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">32170 ms</span>
+                <span class="method-start">58466 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testOrderAviaTicketsWithEmptyDepartureCityOnTravellingPage</span>
-                <span class="method-start">32433 ms</span>
+                <span class="method-start">60191 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">stopBrowser</span>
-                <span class="method-start">37836 ms</span>
+                <span class="method-start">89180 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">org.testing.test.SearchResultOnTravellingPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">37920 ms</span>
+                <span class="method-start">89249 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testSearchAviaTicketsWithCredentialsFromPropertyForTravel</span>
-                <span class="method-start">38084 ms</span>
+                <span class="method-start">89429 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">stopBrowser</span>
-                <span class="method-start">45807 ms</span>
+                <span class="method-start">111181 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">45943 ms</span>
+                <span class="method-start">111304 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">testSearchAviaTicketsWithEmptyArrivalCityForTravel</span>
-                <span class="method-start">46104 ms</span>
+                <span class="method-start">111539 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">stopBrowser</span>
-                <span class="method-start">53519 ms</span>
+                <span class="method-start">122589 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

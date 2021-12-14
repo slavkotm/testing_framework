@@ -11,24 +11,28 @@ public class SearchResultOnTravellingPageTest extends CommonConditions {
     @Test
     public void testSearchAviaTicketsWithCredentialsFromPropertyForTravel() {
         Order testOrder = OrderCreator.withCredentialsFromProperty();
-        SearchResultOnTravellingPage searchResultOnTravellingPage = new SearchResultOnTravellingPage(driver)
+        String arrivalCity = new SearchResultOnTravellingPage(driver)
                 .openPage()
                 .searchPlaceTravelling(testOrder)
                 .completePlaceTravelling()
                 .completeView()
                 .completeWhichElement()
-                .inputDepartureAndArrivalCity(testOrder);
+                .inputDepartureAndArrivalCity(testOrder)
+                .getArrivalCity();
+        Assert.assertTrue( true, arrivalCity);
     }
 
     @Test
     public void testSearchAviaTicketsWithEmptyArrivalCityForTravel() {
         Order testOrder = OrderCreator.withEmptyArrivalCity();
-        SearchResultOnTravellingPage searchResultOnTravellingPage = new SearchResultOnTravellingPage(driver)
+        String departureCity = new SearchResultOnTravellingPage(driver)
                 .openPage()
                 .searchPlaceTravelling(testOrder)
                 .completePlaceTravelling()
                 .completeView()
                 .completeWhichElement()
-                .inputDepartureAndArrivalCity(testOrder);
+                .inputDepartureAndArrivalCity(testOrder)
+                .getDepartureCity();
+        Assert.assertTrue( true, departureCity);
     }
 }

@@ -86,4 +86,12 @@ public class SearchResultOnTravellingPage extends AbstractPage {
                 .until(ExpectedConditions.presenceOfElementLocated(By.xpath(MAIN_INPUT)));
         return this;
     }
+
+    public String getArrivalCity() {
+        return searchInputArrivalCity.getAttribute("content");
+    }
+
+    public String getDepartureCity() {
+        return searchInputDepartureCity.getAttribute("content");
+    }
 }

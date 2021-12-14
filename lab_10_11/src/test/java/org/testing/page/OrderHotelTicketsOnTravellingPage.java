@@ -58,4 +58,8 @@ public class OrderHotelTicketsOnTravellingPage extends AbstractPage {
                 .until(ExpectedConditions.presenceOfElementLocated(By.xpath(BOOKING_HOTEL)));
         return this;
     }
+
+    public String getFieldNameHotelOrCity() {
+        return fieldNameHotelOrCity.getAttribute("content");
+    }
 }

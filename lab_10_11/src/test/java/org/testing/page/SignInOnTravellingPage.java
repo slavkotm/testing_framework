@@ -68,4 +68,8 @@ public class SignInOnTravellingPage extends AbstractPage {
     public String getUserEmail() {
         return fieldUserEmail.getAttribute("content");
     }
+
+    public String getUserPassword() {
+        return fieldUserPassword.getAttribute("content");
+    }
 }
