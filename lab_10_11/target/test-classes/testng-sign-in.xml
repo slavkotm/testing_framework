@@ -1,9 +1,0 @@
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-
-<suite name="signIn" verbose="1" >
-    <test name="SignInOnTravellingPage"   >
-        <classes>
-            <class name="org.testing.test.SignInOnTravellingPageTest" />
-        </classes>
-    </test>
-</suite>
