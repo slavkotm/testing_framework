@@ -1,5 +1,7 @@
 package org.testing.page;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,6 +13,7 @@ import org.testing.model.Order;
 import java.time.Duration;
 
 public class OrderAviaTicketsOnTravellingPage extends AbstractPage {
+    private final Logger logger = LogManager.getRootLogger();
     private static final String PAGE_URL = "https://smorodina.com";
     private static final String BOOKING_AVIA_TICKETS = "/html/body/div[1]/div/div[2]/a[3]/div[2]";
     private static final String DEPARTURE_CITY = "//input[@id=\"flights-origin-prepop-c76878bd0f1c77e8da677bb4549036e0\"]";
@@ -35,6 +38,7 @@ public class OrderAviaTicketsOnTravellingPage extends AbstractPage {
 
     public OrderAviaTicketsOnTravellingPage clickOnButtonBookingAviaTickets() {
         buttonBookingAviaTickets.click();
+        logger.info("order tickets complete...");
         new WebDriverWait(driver, Duration.ofSeconds(WAIT_TIMEOUT_SECONDS))
                 .until(ExpectedConditions.presenceOfElementLocated(By.xpath(DEPARTURE_CITY)));
         return this;
@@ -44,6 +48,7 @@ public class OrderAviaTicketsOnTravellingPage extends AbstractPage {
         fieldDepartureCity.sendKeys(order.getDepartureCity());
         fieldArrivalCity.sendKeys(order.getArrivalCity());
         buttonFindTickets.click();
+        logger.info("look tickets complete...");
         return this;
     }
 

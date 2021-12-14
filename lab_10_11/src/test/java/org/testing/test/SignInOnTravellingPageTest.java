@@ -5,15 +5,20 @@ import org.testing.page.SignInOnTravellingPage;
 import org.testing.service.UserCreator;
 import org.testng.annotations.Test;
 
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.is;
+import static org.testng.Assert.*;
+
 public class SignInOnTravellingPageTest extends CommonConditions {
     @Test
-    public void testSignInAccountWithCredentialsFromPropertyOnTravellingPage() throws InterruptedException {
+    public void testSignInAccountWithCredentialsFromPropertyOnTravellingPage() {
         User testUser = UserCreator.withCredentialsFromProperty();
-        SignInOnTravellingPage signInOnTravellingPage = new SignInOnTravellingPage(driver)
+        String inputEmail = new SignInOnTravellingPage(driver)
                 .openPage()
                 .clickOnButtonSignIn()
-                .inputInFieldUserEmailAndPasswordClickSigIn(testUser);
-        Thread.sleep(5000);
+                .inputInFieldUserEmailAndPasswordClickSigIn(testUser)
+                .getUserEmail();
     }
 
     @Test

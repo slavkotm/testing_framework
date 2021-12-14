@@ -1,5 +1,7 @@
 package org.testing.page;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,6 +13,7 @@ import org.testing.model.User;
 import java.time.Duration;
 
 public class SignInOnTravellingPage extends AbstractPage {
+    private final Logger logger = LogManager.getRootLogger();
     private static final String SIGN_IN_PAGE_URL = "https://smorodina.com";
     private static final String BUTTON_SIGN_IN = "//a[@id='show_registration_modal' and @class='ui-link']";
     private static final String USER_EMAIL = "//input[@id='user_login_email' and @class='email span12']";
@@ -36,6 +39,7 @@ public class SignInOnTravellingPage extends AbstractPage {
 
     public SignInOnTravellingPage clickOnButtonSignIn() {
         buttonSignIn.click();
+        logger.info("sign in complete...");
         new WebDriverWait(driver, Duration.ofSeconds(WAIT_TIMEOUT_SECONDS))
                 .until(ExpectedConditions.presenceOfElementLocated(By.xpath(SIGN_IN_BANNER)));
         return this;
@@ -49,6 +53,7 @@ public class SignInOnTravellingPage extends AbstractPage {
                 .until(ExpectedConditions.presenceOfElementLocated(By.xpath(USER_PASSWORD)));
         fieldUserPassword.sendKeys(user.getPassword());
         buttonEnter.click();
+        logger.info("input data for sign in complete...");
         return this;
     }
 
@@ -58,5 +63,9 @@ public class SignInOnTravellingPage extends AbstractPage {
         new WebDriverWait(driver, Duration.ofSeconds(WAIT_TIMEOUT_SECONDS))
                 .until(ExpectedConditions.presenceOfElementLocated(By.xpath(BUTTON_SIGN_IN)));
         return this;
+    }
+
+    public String getUserEmail() {
+        return fieldUserEmail.getAttribute("content");
     }
 }

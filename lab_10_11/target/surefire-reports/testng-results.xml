@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-12-14T06:26:18 MSK" name="All tests" finished-at="2021-12-14T06:27:11 MSK" duration-ms="53604">
+    <groups>
+    </groups>
+    <test started-at="2021-12-14T06:26:18 MSK" name="All tests" finished-at="2021-12-14T06:27:11 MSK" duration-ms="53604">
+      <class name="org.testing.test.SignInOnTravellingPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.testing.test.SignInOnTravellingPageTest@11dc3715]" started-at="2021-12-14T06:26:18 MSK" name="setUp" finished-at="2021-12-14T06:26:20 MSK" duration-ms="2142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSignInAccountWithCredentialsFromPropertyOnTravellingPage()[pri:0, instance:org.testing.test.SignInOnTravellingPageTest@11dc3715]" started-at="2021-12-14T06:26:20 MSK" name="testSignInAccountWithCredentialsFromPropertyOnTravellingPage" finished-at="2021-12-14T06:26:25 MSK" duration-ms="4766" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignInAccountWithCredentialsFromPropertyOnTravellingPage -->
+        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:org.testing.test.SignInOnTravellingPageTest@11dc3715]" started-at="2021-12-14T06:26:25 MSK" name="stopBrowser" finished-at="2021-12-14T06:26:25 MSK" duration-ms="230" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopBrowser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.testing.test.SignInOnTravellingPageTest@11dc3715]" started-at="2021-12-14T06:26:25 MSK" name="setUp" finished-at="2021-12-14T06:26:25 MSK" duration-ms="146" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSignInAccountWithEmptyUserEmailOnTravellingPage()[pri:0, instance:org.testing.test.SignInOnTravellingPageTest@11dc3715]" started-at="2021-12-14T06:26:25 MSK" name="testSignInAccountWithEmptyUserEmailOnTravellingPage" finished-at="2021-12-14T06:26:33 MSK" duration-ms="7714" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignInAccountWithEmptyUserEmailOnTravellingPage -->
+        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:org.testing.test.SignInOnTravellingPageTest@11dc3715]" started-at="2021-12-14T06:26:33 MSK" name="stopBrowser" finished-at="2021-12-14T06:26:33 MSK" duration-ms="120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopBrowser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.testing.test.SignInOnTravellingPageTest@11dc3715]" started-at="2021-12-14T06:26:33 MSK" name="setUp" finished-at="2021-12-14T06:26:33 MSK" duration-ms="180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSignInAccountWithEmptyUserPasswordOnTravellingPage()[pri:0, instance:org.testing.test.SignInOnTravellingPageTest@11dc3715]" started-at="2021-12-14T06:26:33 MSK" name="testSignInAccountWithEmptyUserPasswordOnTravellingPage" finished-at="2021-12-14T06:26:38 MSK" duration-ms="4902" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignInAccountWithEmptyUserPasswordOnTravellingPage -->
+        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:org.testing.test.SignInOnTravellingPageTest@11dc3715]" started-at="2021-12-14T06:26:38 MSK" name="stopBrowser" finished-at="2021-12-14T06:26:38 MSK" duration-ms="218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopBrowser -->
+      </class> <!-- org.testing.test.SignInOnTravellingPageTest -->
+      <class name="org.testing.test.SearchResultOnTravellingPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.testing.test.SearchResultOnTravellingPageTest@3d121db3]" started-at="2021-12-14T06:26:56 MSK" name="setUp" finished-at="2021-12-14T06:26:56 MSK" duration-ms="164" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSearchAviaTicketsWithCredentialsFromPropertyForTravel()[pri:0, instance:org.testing.test.SearchResultOnTravellingPageTest@3d121db3]" started-at="2021-12-14T06:26:56 MSK" name="testSearchAviaTicketsWithCredentialsFromPropertyForTravel" finished-at="2021-12-14T06:27:04 MSK" duration-ms="7723" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchAviaTicketsWithCredentialsFromPropertyForTravel -->
+        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:org.testing.test.SearchResultOnTravellingPageTest@3d121db3]" started-at="2021-12-14T06:27:04 MSK" name="stopBrowser" finished-at="2021-12-14T06:27:04 MSK" duration-ms="136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopBrowser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.testing.test.SearchResultOnTravellingPageTest@3d121db3]" started-at="2021-12-14T06:27:04 MSK" name="setUp" finished-at="2021-12-14T06:27:04 MSK" duration-ms="161" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSearchAviaTicketsWithEmptyArrivalCityForTravel()[pri:0, instance:org.testing.test.SearchResultOnTravellingPageTest@3d121db3]" started-at="2021-12-14T06:27:04 MSK" name="testSearchAviaTicketsWithEmptyArrivalCityForTravel" finished-at="2021-12-14T06:27:11 MSK" duration-ms="7415" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchAviaTicketsWithEmptyArrivalCityForTravel -->
+        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:org.testing.test.SearchResultOnTravellingPageTest@3d121db3]" started-at="2021-12-14T06:27:11 MSK" name="stopBrowser" finished-at="2021-12-14T06:27:11 MSK" duration-ms="69" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopBrowser -->
+      </class> <!-- org.testing.test.SearchResultOnTravellingPageTest -->
+      <class name="org.testing.test.OrderHotelTicketsOnTravellingPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.testing.test.OrderHotelTicketsOnTravellingPageTest@3c72f59f]" started-at="2021-12-14T06:26:38 MSK" name="setUp" finished-at="2021-12-14T06:26:38 MSK" duration-ms="167" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testOrderHotelsWithTestDataHotelOnTravellingPage()[pri:0, instance:org.testing.test.OrderHotelTicketsOnTravellingPageTest@3c72f59f]" started-at="2021-12-14T06:26:38 MSK" name="testOrderHotelsWithTestDataHotelOnTravellingPage" finished-at="2021-12-14T06:26:44 MSK" duration-ms="5919" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOrderHotelsWithTestDataHotelOnTravellingPage -->
+        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:org.testing.test.OrderHotelTicketsOnTravellingPageTest@3c72f59f]" started-at="2021-12-14T06:26:44 MSK" name="stopBrowser" finished-at="2021-12-14T06:26:44 MSK" duration-ms="122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopBrowser -->
+      </class> <!-- org.testing.test.OrderHotelTicketsOnTravellingPageTest -->
+      <class name="org.testing.test.OrderAviaTicketsOnTravellingPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.testing.test.OrderAviaTicketsOnTravellingPageTest@60dcc9fe]" started-at="2021-12-14T06:26:44 MSK" name="setUp" finished-at="2021-12-14T06:26:45 MSK" duration-ms="197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testOrderAviaTicketsWithCredentialsFromPropertyOnTravellingPage()[pri:0, instance:org.testing.test.OrderAviaTicketsOnTravellingPageTest@60dcc9fe]" started-at="2021-12-14T06:26:45 MSK" name="testOrderAviaTicketsWithCredentialsFromPropertyOnTravellingPage" finished-at="2021-12-14T06:26:50 MSK" duration-ms="5261" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOrderAviaTicketsWithCredentialsFromPropertyOnTravellingPage -->
+        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:org.testing.test.OrderAviaTicketsOnTravellingPageTest@60dcc9fe]" started-at="2021-12-14T06:26:50 MSK" name="stopBrowser" finished-at="2021-12-14T06:26:50 MSK" duration-ms="70" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopBrowser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.testing.test.OrderAviaTicketsOnTravellingPageTest@60dcc9fe]" started-at="2021-12-14T06:26:50 MSK" name="setUp" finished-at="2021-12-14T06:26:50 MSK" duration-ms="263" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testOrderAviaTicketsWithEmptyDepartureCityOnTravellingPage()[pri:0, instance:org.testing.test.OrderAviaTicketsOnTravellingPageTest@60dcc9fe]" started-at="2021-12-14T06:26:50 MSK" name="testOrderAviaTicketsWithEmptyDepartureCityOnTravellingPage" finished-at="2021-12-14T06:26:56 MSK" duration-ms="5403" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOrderAviaTicketsWithEmptyDepartureCityOnTravellingPage -->
+        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:org.testing.test.OrderAviaTicketsOnTravellingPageTest@60dcc9fe]" started-at="2021-12-14T06:26:56 MSK" name="stopBrowser" finished-at="2021-12-14T06:26:56 MSK" duration-ms="82" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopBrowser -->
+      </class> <!-- org.testing.test.OrderAviaTicketsOnTravellingPageTest -->
+    </test> <!-- All tests -->
+  </suite> <!-- All tests -->
+</testng-results>

@@ -1,5 +1,7 @@
 package org.testing.page;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,7 +13,7 @@ import org.testing.model.Order;
 import java.time.Duration;
 
 public class SearchResultOnTravellingPage extends AbstractPage {
-
+    private final Logger logger = LogManager.getRootLogger();
     private static final String PAGE_URL = "https://smorodina.com";
     private static final String MAIN_INPUT = "//*[@id='mainSearchFieldInput']";
     private static final String MAIN_BUTTON = "//*[@id='mainSearchButton']";
@@ -41,6 +43,7 @@ public class SearchResultOnTravellingPage extends AbstractPage {
     public SearchResultOnTravellingPage inputDepartureAndArrivalCity(Order order) {
         searchInputDepartureCity.sendKeys(order.getDepartureCity());
         searchInputArrivalCity.sendKeys(order.getArrivalCity());
+        logger.info("input departure and arrival city complete...");
         return this;
     }
 

@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-All_tests" class="navigator-link">
+              <span class="suite-name border-passed">All tests</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-All_tests" class="navigator-link ">
+                    <span>testng-all.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-All_tests" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-All_tests" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-All_tests" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-All_tests" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-All_tests" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-All_tests" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">8 methods,   8 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-All_tests" class="hide-methods passed suite-All_tests"> (hide)</a> <!-- hide-methods passed suite-All_tests -->
+                      <a href="#" panel-name="suite-All_tests" class="show-methods passed suite-All_tests"> (show)</a> <!-- show-methods passed suite-All_tests -->
+                    </span>
+                    <div class="method-list-content passed suite-All_tests">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_tests" title="org.testing.test.OrderAviaTicketsOnTravellingPageTest" class="method navigator-link" hash-for-method="testOrderAviaTicketsWithCredentialsFromPropertyOnTravellingPage">testOrderAviaTicketsWithCredentialsFromPropertyOnTravellingPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_tests" title="org.testing.test.OrderAviaTicketsOnTravellingPageTest" class="method navigator-link" hash-for-method="testOrderAviaTicketsWithEmptyDepartureCityOnTravellingPage">testOrderAviaTicketsWithEmptyDepartureCityOnTravellingPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_tests" title="org.testing.test.OrderHotelTicketsOnTravellingPageTest" class="method navigator-link" hash-for-method="testOrderHotelsWithTestDataHotelOnTravellingPage">testOrderHotelsWithTestDataHotelOnTravellingPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_tests" title="org.testing.test.SearchResultOnTravellingPageTest" class="method navigator-link" hash-for-method="testSearchAviaTicketsWithCredentialsFromPropertyForTravel">testSearchAviaTicketsWithCredentialsFromPropertyForTravel</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_tests" title="org.testing.test.SearchResultOnTravellingPageTest" class="method navigator-link" hash-for-method="testSearchAviaTicketsWithEmptyArrivalCityForTravel">testSearchAviaTicketsWithEmptyArrivalCityForTravel</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_tests" title="org.testing.test.SignInOnTravellingPageTest" class="method navigator-link" hash-for-method="testSignInAccountWithCredentialsFromPropertyOnTravellingPage">testSignInAccountWithCredentialsFromPropertyOnTravellingPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_tests" title="org.testing.test.SignInOnTravellingPageTest" class="method navigator-link" hash-for-method="testSignInAccountWithEmptyUserEmailOnTravellingPage">testSignInAccountWithEmptyUserEmailOnTravellingPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_tests" title="org.testing.test.SignInOnTravellingPageTest" class="method navigator-link" hash-for-method="testSignInAccountWithEmptyUserPasswordOnTravellingPage">testSignInAccountWithEmptyUserPasswordOnTravellingPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-All_tests -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-All_tests" class="panel All_tests">
+          <div class="suite-All_tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.testing.test.OrderHotelTicketsOnTravellingPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testOrderHotelsWithTestDataHotelOnTravellingPage">
+                  </a> <!-- testOrderHotelsWithTestDataHotelOnTravellingPage -->
+                  <span class="method-name">testOrderHotelsWithTestDataHotelOnTravellingPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_tests-class-passed -->
+          <div class="suite-All_tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.testing.test.SearchResultOnTravellingPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchAviaTicketsWithCredentialsFromPropertyForTravel">
+                  </a> <!-- testSearchAviaTicketsWithCredentialsFromPropertyForTravel -->
+                  <span class="method-name">testSearchAviaTicketsWithCredentialsFromPropertyForTravel</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchAviaTicketsWithEmptyArrivalCityForTravel">
+                  </a> <!-- testSearchAviaTicketsWithEmptyArrivalCityForTravel -->
+                  <span class="method-name">testSearchAviaTicketsWithEmptyArrivalCityForTravel</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_tests-class-passed -->
+          <div class="suite-All_tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.testing.test.SignInOnTravellingPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSignInAccountWithCredentialsFromPropertyOnTravellingPage">
+                  </a> <!-- testSignInAccountWithCredentialsFromPropertyOnTravellingPage -->
+                  <span class="method-name">testSignInAccountWithCredentialsFromPropertyOnTravellingPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSignInAccountWithEmptyUserEmailOnTravellingPage">
+                  </a> <!-- testSignInAccountWithEmptyUserEmailOnTravellingPage -->
+                  <span class="method-name">testSignInAccountWithEmptyUserEmailOnTravellingPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSignInAccountWithEmptyUserPasswordOnTravellingPage">
+                  </a> <!-- testSignInAccountWithEmptyUserPasswordOnTravellingPage -->
+                  <span class="method-name">testSignInAccountWithEmptyUserPasswordOnTravellingPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_tests-class-passed -->
+          <div class="suite-All_tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.testing.test.OrderAviaTicketsOnTravellingPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testOrderAviaTicketsWithCredentialsFromPropertyOnTravellingPage">
+                  </a> <!-- testOrderAviaTicketsWithCredentialsFromPropertyOnTravellingPage -->
+                  <span class="method-name">testOrderAviaTicketsWithCredentialsFromPropertyOnTravellingPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testOrderAviaTicketsWithEmptyDepartureCityOnTravellingPage">
+                  </a> <!-- testOrderAviaTicketsWithEmptyDepartureCityOnTravellingPage -->
+                  <span class="method-name">testOrderAviaTicketsWithEmptyDepartureCityOnTravellingPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_tests-class-passed -->
+        </div> <!-- panel All_tests -->
+        <div panel-name="test-xml-All_tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/home/pirozhok/testing_framework/lab_10_11/src/test/resources/testng-all.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;All tests&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;All tests&quot; verbose=&quot;0&quot;&gt;
+    &lt;packages&gt;
+      &lt;package name=&quot;org.testing.test&quot;/&gt;
+    &lt;/packages&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;org.testing.test.SignInOnTravellingPageTest&quot;/&gt;
+      &lt;class name=&quot;org.testing.test.CommonConditions&quot;/&gt;
+      &lt;class name=&quot;org.testing.test.OrderHotelTicketsOnTravellingPageTest&quot;/&gt;
+      &lt;class name=&quot;org.testing.test.OrderAviaTicketsOnTravellingPageTest&quot;/&gt;
+      &lt;class name=&quot;org.testing.test.SearchResultOnTravellingPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- All tests --&gt;
+&lt;/suite&gt; &lt;!-- All tests --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-All_tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for All tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">All tests (5 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-All_tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for All tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-All_tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for All tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_All_tests');
+function tableData_All_tests() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(8);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testSearchAviaTicketsWithCredentialsFromPropertyForTravel')
+data.setCell(0, 2, 'org.testing.test.SearchResultOnTravellingPageTest')
+data.setCell(0, 3, 7723);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testSignInAccountWithEmptyUserEmailOnTravellingPage')
+data.setCell(1, 2, 'org.testing.test.SignInOnTravellingPageTest')
+data.setCell(1, 3, 7714);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testSearchAviaTicketsWithEmptyArrivalCityForTravel')
+data.setCell(2, 2, 'org.testing.test.SearchResultOnTravellingPageTest')
+data.setCell(2, 3, 7415);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testOrderHotelsWithTestDataHotelOnTravellingPage')
+data.setCell(3, 2, 'org.testing.test.OrderHotelTicketsOnTravellingPageTest')
+data.setCell(3, 3, 5919);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testOrderAviaTicketsWithEmptyDepartureCityOnTravellingPage')
+data.setCell(4, 2, 'org.testing.test.OrderAviaTicketsOnTravellingPageTest')
+data.setCell(4, 3, 5403);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testOrderAviaTicketsWithCredentialsFromPropertyOnTravellingPage')
+data.setCell(5, 2, 'org.testing.test.OrderAviaTicketsOnTravellingPageTest')
+data.setCell(5, 3, 5261);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testSignInAccountWithEmptyUserPasswordOnTravellingPage')
+data.setCell(6, 2, 'org.testing.test.SignInOnTravellingPageTest')
+data.setCell(6, 3, 4902);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testSignInAccountWithCredentialsFromPropertyOnTravellingPage')
+data.setCell(7, 2, 'org.testing.test.SignInOnTravellingPageTest')
+data.setCell(7, 3, 4766);
+window.suiteTableData['All_tests']= { tableData: data, tableDiv: 'times-div-All_tests'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 49 seconds</span>
+              <div id="times-div-All_tests">
+              </div> <!-- times-div-All_tests -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-All_tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for All tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-All_tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-All_tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.testing.test.SignInOnTravellingPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSignInAccountWithCredentialsFromPropertyOnTravellingPage</span>
+                <span class="method-start">2143 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">stopBrowser</span>
+                <span class="method-start">6910 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">7141 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSignInAccountWithEmptyUserEmailOnTravellingPage</span>
+                <span class="method-start">7287 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">stopBrowser</span>
+                <span class="method-start">15002 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">15124 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSignInAccountWithEmptyUserPasswordOnTravellingPage</span>
+                <span class="method-start">15304 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">stopBrowser</span>
+                <span class="method-start">20206 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.testing.test.OrderHotelTicketsOnTravellingPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">20431 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testOrderHotelsWithTestDataHotelOnTravellingPage</span>
+                <span class="method-start">20598 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">stopBrowser</span>
+                <span class="method-start">26518 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.testing.test.OrderAviaTicketsOnTravellingPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">26642 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testOrderAviaTicketsWithCredentialsFromPropertyOnTravellingPage</span>
+                <span class="method-start">26839 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">stopBrowser</span>
+                <span class="method-start">32100 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">32170 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testOrderAviaTicketsWithEmptyDepartureCityOnTravellingPage</span>
+                <span class="method-start">32433 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">stopBrowser</span>
+                <span class="method-start">37836 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.testing.test.SearchResultOnTravellingPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">37920 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSearchAviaTicketsWithCredentialsFromPropertyForTravel</span>
+                <span class="method-start">38084 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">stopBrowser</span>
+                <span class="method-start">45807 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">45943 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSearchAviaTicketsWithEmptyArrivalCityForTravel</span>
+                <span class="method-start">46104 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">stopBrowser</span>
+                <span class="method-start">53519 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
